@@ -1,0 +1,267 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+/* FIRST PAGE - HEADER*/
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*position: fixed;*/
+  top: 0;
+  background: rgba(240, 230, 175, 0.8);
+
+}
+
+nav {
+  height: 20%;
+  width: 80%;
+  max-width: 350px;
+  position: absolute;
+  right: 5%;
+  
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  display: block;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  display: flex;
+  font-family: Baskervville, sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+  color: #9C9319;
+}
+.about-a{
+ margin-right: 2px;
+}
+
+.projects-a{
+ margin-right: 2px;
+}
+
+.contact-a{
+ margin-right: 2px
+}
+
+a:hover {
+  transform: scale(1.1, 1.1);
+}
+
+a:active {
+  transform: scaleY(-1) !important;
+  transition-duration: 1ms !important;
+  transition-timing-function: 50ms !important;
+}
+
+/* MOBILE V START*/
+@media only screen and (max-width: 550px) {
+  header {
+    height: 35px;
+    
+  }
+
+  a:hover {
+  transform: scale(1.1) !important;
+  }
+
+  nav {
+    right: 0;
+  }
+  
+  nav > ul {
+    flex-direction: row;
+  }
+  nav > ul > li > a {
+    font-size: 17px; 
+  }
+  
+  .welcome-text > h1 {
+  font-weight: 900;
+  font-size: 40px!important;
+  }
+
+  .project-tile { 
+    display: flex; 
+    flex-direction: column !important;
+    width: 100vw !important;
+    height: 70vh;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    overflow: auto;
+    border-radius: 5px;
+  }
+
+  .project-tile > div {
+  border: 1px solid; 
+  width: 20vw;
+  height: 20vw;
+}
+}
+/* MOBILE V END*/
+
+/* WELCOME START*/
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  /*height: 100vh;*/
+  background-color: /*rgba(255, 233, 198, 0.6)*//*rgba(255, 186, 0, 0.9)*/rgba(240, 230, 175, 0.8);
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  
+
+}
+
+.welcome-text {
+
+  font-family: Baskervville, sans-serif;
+  color: rgba(78, 138, 109, 1); 
+  margin-bottom: 10%;
+
+    
+
+}
+
+.welcome-text > h1 {
+  font-weight: 900;
+  font-size: 60px;
+ 
+}
+/* WELCOME END*/
+/* PROJECTS START*/
+.projects-section {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(240, 230, 175, 0.8),
+    rgba(255, 204, 168, 0.8));
+  display: flex;
+  justify-content: center; 
+  align-items: top; 
+
+}
+
+.projects-text > h1 {
+  font-weight: 900;
+  font-size: 40px;
+  font-family: Baskervville, sans-serif;
+  color: #DC828F; 
+  top: 0; 
+  margin-bottom: 2vh;
+  margin-right: auto;
+  margin-left: auto; 
+  text-align: center; 
+  
+}
+
+.projects-text > p {
+  font-weight: 900;
+  font-size: 25px;
+  font-family: Baskervville, sans-serif;
+  color: #DC828F; 
+  top: 0; 
+  margin-top: 0vh;
+  margin-right: auto;
+  margin-left: auto; 
+  text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 6px double;
+    color: rgba(160, 160, 160, 0.8);
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    margin-bottom: 2vh;
+}
+
+hr:after {
+    background: #DC828F;
+    content: '§';
+    color: rgba(240, 230, 175, 0.8);
+    padding: 0 6px;
+    position: relative;
+    top: -13px;
+    border-radius: 50%;
+}
+
+.project-tile > div {
+
+  border: 1px solid rgba(106, 106, 106, 0.1);
+  width: 20vw;
+  min-width: 100px;
+  min-height: 100px;
+  height: 20vw;
+  position: relative; 
+  margin: 10px;
+  border-radius: 4%;
+  background: linear-gradient(130deg,rgba(252, 255, 224, 0.01), rgba(252, 255, 224, 0.03), rgba(252, 255, 224, 0.2),rgba(252, 255, 224, 0.01));
+}
+.fCC-logo {
+  width: 20vw;
+  min-width: 100px;
+  min-height: 100px;
+  height: 20vw;
+  border-radius: 4%;
+  opacity: 0.6;
+}
+
+.fCC-logo:hover {
+  opacity: 0.8;
+  transform: scale(1.01);
+}
+
+.p1 {
+  border: 0px !important;
+  background: none !important;
+}
+
+
+
+/* PROJECTS END----------------------------*/
+/* CONTACT START*/
+.contact-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: top; 
+  background: linear-gradient(
+    180deg,
+    rgba(255, 204, 168, 0.8) 10%,
+    rgba(255, 204, 168, 0.8),
+    rgba(255, 204, 168, 0.8));
+}
+
+.contact-text > h1 {
+  font-weight: 900;
+  font-size: 40px;
+  font-family: Baskervville, sans-serif;
+  color: rgba(125, 93, 71, 0.8); 
+}
+/* CONTACT END*/

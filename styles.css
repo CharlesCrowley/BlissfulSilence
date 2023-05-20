@@ -100,24 +100,47 @@ a:active {
   .welcome-text > h1 {
   font-weight: 900;
   font-size: 40px!important;
+  margin-right: auto;
+  margin-left: auto; 
+  text-align: center;
   }
-
-  .project-tile { 
-    display: flex; 
-    flex-direction: column !important;
-    width: 100vw !important;
-    height: 70vh;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-    overflow: auto;
-    border-radius: 5px;
+  
+  .welcome-text > p {
+   margin-right: auto;
+  margin-left: auto; 
+  text-align: center;
   }
-
-  .project-tile > div {
-  border: 1px solid; 
-  width: 20vw;
-  height: 20vw;
+  
+  .projects-text > h1 {
+  font-weight: 600 !important;
+  font-size: 40px !important;
+  font-family: Baskervville, sans-serif;
+  color: #DC828F; 
+  top: 0; 
+  margin-bottom: 2vh;
+  margin-right: auto;
+  margin-left: auto; 
+  text-align: center; 
+  
 }
+
+.projects-text > p {
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  font-family: Baskervville, sans-serif;
+  color: #DC828F; 
+  top: 0; 
+  margin-top: 0vh;
+  margin-right: 30px !important;
+  margin-left: 30px !important;
+  text-align: center;
+}
+  hr {
+  margin-right: 30px !important;
+  margin-left: 30px !important;
+  }
+
+
 }
 /* MOBILE V END*/
 

@@ -111,11 +111,6 @@ a:active {
   text-align: center;
   }
   
-  .long-form {
-  height: 200vh !important;
-  padding-top: 100px;
-}
-  
   .projects-text > h1 {
   font-weight: 600 !important;
   font-size: 40px !important;
@@ -191,6 +186,10 @@ a:active {
   justify-content: center; 
   align-items: top; 
 
+}
+
+.long-form {
+  height: 200vh !important;
 }
 
 .projects-text > h1 {

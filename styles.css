@@ -111,6 +111,10 @@ a:active {
   text-align: center;
   }
   
+  .long-form {
+  height: 200vh !important;
+}
+  
   .projects-text > h1 {
   font-weight: 600 !important;
   font-size: 40px !important;

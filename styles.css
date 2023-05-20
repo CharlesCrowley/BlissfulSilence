@@ -113,6 +113,7 @@ a:active {
   
   .long-form {
   height: 200vh !important;
+  padding-top: 100px;
 }
   
   .projects-text > h1 {

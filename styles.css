@@ -291,4 +291,10 @@ hr:after {
   font-family: Baskervville, sans-serif;
   color: rgba(125, 93, 71, 0.8); 
 }
+.contact-text > p {
+  font-weight: 900;
+  font-size: 20px;
+  font-family: Baskervville, sans-serif;
+  color: rgba(125, 93, 71, 0.8); 
+}
 /* CONTACT END*/
